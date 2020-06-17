@@ -1,8 +1,28 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(./fonts/OpenSans-Regular.eot) format("embedded-opentype"),
+        url(./fonts/OpenSans-Regular.ttf) format("truetype"),
+        url(./fonts/OpenSans-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "GothamPro-Bold";
+    src: url(./fonts/GothamPro-Bold.eot) format("embedded-opentype"),
+        url(./fonts/GothamPro-Bold.ttf) format("truetype"),
+        url(./fonts/GothamPro-Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Coustard";
+    src: url(./fonts/Coustard-Regular.ttf) format("truetype"),
+}
+
 /* универсальный селектор для всех элементов */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "OpenSans";
 }
 
 /* обнуление свойств по умолчанию */
@@ -15,9 +35,9 @@ a {
     color: black;
 }
 
-body {
+/* body {
     background: coral;
-}
+} */
 
 /* задаем стили для мобильной версии */
 .container {
@@ -70,6 +90,7 @@ body {
 
 .menu {
     padding: 26px 0;
+    font-weight: bold;
 }
 
 .menu li:last-child {
@@ -108,8 +129,7 @@ body {
 }
 
 .s1_list {
-    padding-top: 24px;
-    padding-bottom: 80px;
+    padding: 24px 20px 80px 0;
 }
 
 .s1_list-item {
@@ -144,11 +164,139 @@ body {
     padding-right: 54px;
 }
 
+/* СЕКЦИЯ 2 */
+.s2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.s2_title {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-family: "GothamPro-Bold";
+    padding: 64px 25px 0;
+    margin-bottom: 74px;
+}
+
+.s2_list {
+    padding-bottom: 12px;
+}
+
+.s2_list-item {
+    width: 170px;
+    height: 170px;
+    border: 6px double yellow;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.s2_list-item::before {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: -29%;
+    left: 23%;
+}
+
+.s2_list-item:nth-child(1)::before {
+    background: yellow url(./image/icons/icon1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s2_list-item:nth-child(2)::before {
+    background: yellow url(./image/icons/icon2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s2_list-item:nth-child(3)::before {
+    background: yellow url(./image/icons/icon3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s2_list-item:nth-child(4)::before {
+    background: yellow url(./image/icons/icon4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s2_list-item p {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.s2_list-item p:first-child {
+    padding-top: 40px;
+}
+
+/* СЕКЦИЯ 4 */
+.s4 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.s4_title {
+    position: relative;
+    padding: 116px 20px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    font-family: "GothamPro-Bold";
+}
+
+.s4_title::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 34px;
+    background: url(./image/icons/s4-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 30%;
+    left: 43%;
+}
+
+.s4_list {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding: 38px 20px 68px 75px;
+    position: relative;
+}
+
+.s4_list::before {
+    position: absolute;
+    content: "";
+    height: 60%;
+    border: 2px solid #ffe100;
+    top: 15%;
+    left: 12%;
+}
+
+.s4_list-item {
+    line-height: 30px;
+}
+
+.s4_list-item:last-child {
+    display: none;
+}
 
 /* ФУТЕР */
 .footer_wrapper {
     width: 100%;
-    background-color: black;
+    background-color: rgb(66, 51, 51);
 }
 
 footer {
