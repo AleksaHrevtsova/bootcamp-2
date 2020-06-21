@@ -57,15 +57,16 @@ a {
 
 .header_nav {
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 20px;
-    padding-left: 55px;
+    padding: 38px 0 38px 55px;
 }
 
 .logo {
     text-transform: capitalize;
     font-size: 16px;
-    padding-top: 38px;
     position: relative;
 }
 
@@ -80,7 +81,7 @@ a {
     width: 46px;
     height: 46px;
     left: -50px;
-    top: 24px;
+    top: -12px;
 }
 
 .logo span {
@@ -89,8 +90,8 @@ a {
 }
 
 .menu {
-    padding: 26px 0;
     font-weight: bold;
+    overflow: hidden;
 }
 
 .menu li:last-child {
@@ -129,15 +130,15 @@ a {
 }
 
 .header .menu-btn {
-    /* display: none; */
+    display: none;
 }
 
 /* label - обертка гамбургера */
 .header .menu-icon {
     display: flex;
-    width: 70px;
-    border: 1px solid red;
-    padding: 20px;
+    /* width: 70px; */
+    /* border: 1px solid red; */
+    /* padding: 20px; */
     position: relative;
     user-select: none;
     cursor: grab;
@@ -146,10 +147,11 @@ a {
 /* это span из html - основной элемент гамбургера */
 .header .menu-icon .navicon {
     display: block;
-    border: 2px solid yellow;
+    background: yellow;
     width: 25px;
+    height: 3px;
     position: relative;
-    transition: backgroung 0.2s ease-out;
+    transition: background 0.2s ease-out;
 }
 
 .header .menu-icon .navicon::before,
@@ -158,23 +160,28 @@ a {
     content: "";
     position: absolute;
     width: 100%;
+    height: 100%;
     transition: all 0.2s ease-out;
 }
 
 .header .menu-icon .navicon::before {
-    border: 2px solid green;
+    background: green;
     top: 10px;
 }
 
 .header .menu-icon .navicon::after {
-    border: 2px solid red;
+    background: red;
     top: -10px;
 }
 
 /* эфект гамбургера при нажатии */
 /* для спана  */
+.header .menu-btn:checked~.menu {
+    max-height: 100%;
+}
+
 .header .menu-btn:checked~.menu-icon .navicon {
-    border: transparent;
+    background: transparent;
 }
 
 /* для псевдоэлементов */
@@ -186,10 +193,6 @@ a {
 .header .menu-btn:checked~.menu-icon .navicon::after {
     transform: rotate(45deg);
     top: 0;
-}
-
-.header .menu-btn:checked~.menu {
-    max-height: 100%;
 }
 
 /* СЕКЦИЯ 1 */
