@@ -94,11 +94,12 @@ a {
     overflow: hidden;
 }
 
-.menu li:last-child {
+.menu li:nth-child(2) {
     position: relative;
+    padding-left: 20px;
 }
 
-.menu li:last-child::before {
+.menu li:nth-child(2)::before {
     position: absolute;
     content: "";
     background: url(./image/icons/viber.png);
@@ -107,7 +108,7 @@ a {
     width: 22px;
     height: 22px;
     top: 0px;
-    left: -22px;
+    left: 0px;
 }
 
 .menu li a {
@@ -607,4 +608,48 @@ footer {
 footer p {
     font-size: 12px;
     text-align: center;
+}
+
+@media (width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    /* HEADER */
+    .header_nav {
+        margin: 0 40px;
+        padding: 34px 0 34px 55px;
+    }
+
+    /* скрываем гамбургер-меню */
+    .header .menu-icon {
+        display: none;
+    }
+
+    /* задаем строчное позиционирование для списка меню*/
+    .menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        overflow: visible;
+    }
+
+    .menu li {
+        margin-right: 10px;
+    }
+
+    .menu li:nth-child(1) {
+        position: relative;
+    }
+
+    .menu li:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 22px;
+        background: grey;
+        top: 0;
+        right: -7px;
+    }
+
 }
