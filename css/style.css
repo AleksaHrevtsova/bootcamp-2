@@ -1,20 +1,20 @@
 @font-face {
     font-family: "OpenSans";
-    src: url(./fonts/OpenSans-Regular.eot) format("embedded-opentype"),
-        url(./fonts/OpenSans-Regular.ttf) format("truetype"),
-        url(./fonts/OpenSans-Regular.woff) format("woff");
+    src: url(../fonts/OpenSans-Regular.eot) format("embedded-opentype"),
+        url(../fonts/OpenSans-Regular.ttf) format("truetype"),
+        url(../fonts/OpenSans-Regular.woff) format("woff");
 }
 
 @font-face {
     font-family: "GothamPro-Bold";
-    src: url(./fonts/GothamPro-Bold.eot) format("embedded-opentype"),
-        url(./fonts/GothamPro-Bold.ttf) format("truetype"),
-        url(./fonts/GothamPro-Bold.woff) format("woff");
+    src: url(../fonts/GothamPro-Bold.eot) format("embedded-opentype"),
+        url(../fonts/GothamPro-Bold.ttf) format("truetype"),
+        url(../fonts/GothamPro-Bold.woff) format("woff");
 }
 
 @font-face {
     font-family: "Coustard";
-    src: url(./fonts/Coustard-Regular.ttf) format("truetype");
+    src: url(../fonts/Coustard-Regular.ttf) format("truetype");
 }
 
 /* универсальный селектор для всех элементов */
@@ -73,7 +73,7 @@ a {
 .logo::before {
     content: "";
     position: absolute;
-    background: url(./image/icons/logo.png);
+    background: url(../image/icons/logo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: yellow;
@@ -102,7 +102,7 @@ a {
 .menu li:nth-child(2)::before {
     position: absolute;
     content: "";
-    background: url(./image/icons/viber.png);
+    background: url(../image/icons/viber.png);
     background-position: center;
     background-repeat: no-repeat;
     width: 22px;
@@ -199,7 +199,7 @@ a {
 /* СЕКЦИЯ 1 */
 .s1 {
     padding: 225px 20px 0;
-    background: #535353 url(./image/s1_background.png);
+    background: #535353 url(../image/s1_background.png);
     background-size: cover;
     background-blend-mode: soft-light;
     display: flex;
@@ -230,7 +230,7 @@ a {
     content: "";
     width: 14px;
     height: 14px;
-    background: url(./image/icons/star.png);
+    background: url(../image/icons/star.png);
     background-position: center;
     background-repeat: no-repeat;
     left: 0;
@@ -290,25 +290,25 @@ a {
 }
 
 .s2_list-item:nth-child(1)::before {
-    background: yellow url(./image/icons/icon1.png);
+    background: yellow url(../image/icons/icon1.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .s2_list-item:nth-child(2)::before {
-    background: yellow url(./image/icons/icon2.png);
+    background: yellow url(../image/icons/icon2.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .s2_list-item:nth-child(3)::before {
-    background: yellow url(./image/icons/icon3.png);
+    background: yellow url(../image/icons/icon3.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .s2_list-item:nth-child(4)::before {
-    background: yellow url(./image/icons/icon4.png);
+    background: yellow url(../image/icons/icon4.png);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -390,43 +390,44 @@ a {
     left: 0;
 }
 
-/* div.ant-carousel-arrow-left,
+/*  */
+div.ant-carousel-arrow-left,
 div.ant-carousel-arrow-right {
     width: 24px;
     height: 40px;
     position: absolute;
     cursor: pointer;
-    z-index: 90;
+    z-index: 101;
     top: 44%;
-} */
+}
 
-/* div.ant-carousel-arrow-left:hover,
+div.ant-carousel-arrow-left:hover,
 div.ant-carousel-arrow-right:hover {
     opacity: 1;
-} */
+}
 
 /* левая стрелка слайдера */
-/* div.ant-carousel-arrow-left {
+div.ant-carousel-arrow-left {
     left: -2px;
     display: block;
     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
-} */
+}
 
 /* правая стрелка слайдера */
-/* div.ant-carousel-arrow-right {
+div.ant-carousel-arrow-right {
     right: -4px;
     display: block;
     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
-} */
+}
 
-/* ховер левой стрелки слайдера */
-/* div.ant-carousel-arrow-left:hover,
+/* ховер левой стрелки слайдера  */
+div.ant-carousel-arrow-left:hover,
 div.ant-carousel-arrow-right:hover {
     opacity: 1;
-} */
+}
 
 /* контейнер с точками слайдера */
-/* div.ant-carousel-dots {
+div.ant-carousel-dots {
     width: 100%;
     height: auto;
     position: absolute;
@@ -434,10 +435,10 @@ div.ant-carousel-arrow-right:hover {
     bottom: 64px;
     z-index: 30;
     text-align: center;
-} */
+}
 
 /* точки слайдера */
-/* span.ant-dot {
+span.ant-dot {
     width: 10px;
     height: 10px;
     margin: 5px 7px;
@@ -446,7 +447,7 @@ div.ant-carousel-arrow-right:hover {
     background-color: #bbb;
     border-radius: 5px;
     cursor: pointer;
-} */
+}
 
 /* СЕКЦИЯ 4 */
 .s4 {
@@ -470,7 +471,7 @@ div.ant-carousel-arrow-right:hover {
     content: "";
     width: 50px;
     height: 34px;
-    background: url(./image/icons/s4-icon.png);
+    background: url(../image/icons/s4-icon.png);
     background-position: center;
     background-repeat: no-repeat;
     top: 30%;
@@ -569,7 +570,7 @@ div.ant-carousel-arrow-right:hover {
     content: "";
     width: 32px;
     height: 32px;
-    background: url(./image/icons/check.png);
+    background: url(../image/icons/check.png);
     background-position: center;
     background-repeat: no-repeat;
     top: -3px;
@@ -586,7 +587,7 @@ div.ant-carousel-arrow-right:hover {
     content: "";
     width: 22px;
     height: 22px;
-    background: url(./image/icons/viber.png);
+    background: url(../image/icons/viber.png);
     background-position: center;
     background-repeat: no-repeat;
     top: 4px;
@@ -688,4 +689,49 @@ footer p {
     .s2_list-item:last-child {
         margin-right: 0;
     }
+
+    /* SECTION 3 */
+    .ant-carousel-hider {
+        width: 768px;
+    }
+
+    .ant-carousel-element img {
+        width: 334px;
+        height: 240px;
+    }
+
+    /* SECTION 4 */
+    .s4 {
+        align-items: flex-start;
+    }
+
+    .s4_title {
+        padding: 84px 62px 0 152px;
+        font-size: 23px;
+        text-align: left;
+    }
+
+    .s4_title::before {
+        width: 75px;
+        height: 50px;
+        background: url(../image/icons/s4_tablet-icon.png);
+        top: 58%;
+        left: 9%;
+    }
+
+    .s4_list {
+        padding: 38px 20px 80px 336px;
+    }
+
+    .s4_list::before {
+        height: 60%;
+        border: 1px solid #ffe100;
+        top: 15%;
+        left: 306px;
+    }
+
+    .s4_list-item:last-child {
+        display: block;
+    }
+
 }
