@@ -35,9 +35,12 @@ a {
     color: black;
 }
 
-/* body {
-    background: coral;
-} */
+/* пример для js и взаимодействия с DOM-элементами*/
+.example {
+    background-color: hotpink;
+    color: white;
+    font-size: large;
+}
 
 /* задаем стили для мобильной версии */
 .container {
@@ -345,6 +348,7 @@ a {
     background: #535353;
     width: auto;
     padding: 100px 0;
+    position: relative;
 }
 
 .ant-carousel-hider {
@@ -353,6 +357,8 @@ a {
     justify-content: flex-start;
     width: 320px;
     overflow: hidden;
+    margin: 0 20px;
+    position: relative;
 }
 
 .ant-carousel-list {
@@ -363,7 +369,7 @@ a {
 }
 
 .ant-carousel-element {
-    margin: 20px;
+    margin-right: 20px;
 }
 
 .ant-carousel-element img {
@@ -394,11 +400,12 @@ a {
 div.ant-carousel-arrow-left,
 div.ant-carousel-arrow-right {
     width: 24px;
-    height: 40px;
+    height: 50px;
     position: absolute;
     cursor: pointer;
     z-index: 101;
-    top: 44%;
+    top: 38%;
+    padding: 15px;
 }
 
 div.ant-carousel-arrow-left:hover,
@@ -408,16 +415,18 @@ div.ant-carousel-arrow-right:hover {
 
 /* левая стрелка слайдера */
 div.ant-carousel-arrow-left {
-    left: -2px;
+    left: 0px;
     display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
+    background: #53535383 url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
+    background-position: center;
 }
 
 /* правая стрелка слайдера */
 div.ant-carousel-arrow-right {
-    right: -4px;
+    right: 0px;
     display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
+    background: #53535383 url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
+    background-position: center;
 }
 
 /* ховер левой стрелки слайдера  */
@@ -432,7 +441,7 @@ div.ant-carousel-dots {
     height: auto;
     position: absolute;
     left: 0;
-    bottom: 64px;
+    bottom: 38px;
     z-index: 30;
     text-align: center;
 }
@@ -700,6 +709,7 @@ footer p {
     /* SECTION 3 */
     .ant-carousel-hider {
         width: 768px;
+        margin: 0 40px;
     }
 
     .ant-carousel-element img {
@@ -882,10 +892,6 @@ footer p {
     .ant-carousel-hider {
         width: 1280px;
         margin: 0 60px;
-    }
-
-    .ant-carousel-element {
-        margin: 0 20px 0 0;
     }
 
     .ant-carousel-element img {

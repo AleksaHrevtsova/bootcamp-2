@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Bootcamp-2</title>
-    <!-- <div id="menuToggle">
-                        <input type="checkbox" />
-                        <span id="span1"></span>
-                        <span id="span2"></span>
-                        <span id="span3"></span>
-                    </div> -->
 </head>
 
 
@@ -19,7 +13,7 @@
     <div class="header_wrapper">
         <header class="header container">
             <nav class="header_nav">
-                <a class="logo" href="#">мебель<span>ремсервис</span></a>
+                <a class="logo" id="main-logo" href="#">мебель<span>ремсервис</span></a>
 
                 <!-- элемент, срабатывающий на нажатие мышкой -->
                 <input class="menu-btn" type="checkbox" id="menu-btn">
@@ -27,7 +21,7 @@
                 <!-- сам гамбургер -->
                 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-                <ul class="menu">
+                <ul class="menu" data-action="action">
                     <li><a href="#">+30 068 604 46 26</a></li>
                     <li><a href="#">+30 068 954 06 99</a></li>
                     <li><a href="#">link</a></li>
@@ -75,10 +69,15 @@
                 </li>
             </ul>
         </section>
-
+        <!-- получить доступ к section-->
         <section class="s3 ant-carousel">
+            <!-- получить доступ к div-->
             <div class="ant-carousel-hider">
+
+                <!-- получить доступ к div-->
                 <div class="ant-carousel-arrow-left"></div>
+
+                <!-- получить доступ к ul-->
                 <ul class="ant-carousel-list">
                     <li class="ant-carousel-element">
                         <img src="./image/1.jpg" alt="1" />
@@ -105,8 +104,11 @@
                         <p>Description</p>
                     </li>
                 </ul>
+
+                <!-- получить доступ к div-->
                 <div class="ant-carousel-arrow-right"></div>
             </div>
+            <!-- получить доступ к div-->
             <div class="ant-carousel-dots"></div>
         </section>
 
@@ -177,6 +179,10 @@
             <p>&copy; 2020 | Копирование материалов запрещено</p>
         </footer>
     </div>
+
+    <!-- <script type="module" src="./js/classwork.js"></script>
+    <script type="module" src="./js/homework.js"></script> -->
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
